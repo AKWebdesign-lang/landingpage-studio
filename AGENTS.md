@@ -28,3 +28,10 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+<!-- AGENT-MEMORY:BEGIN -->
+- Business contact details live only in `src/lib/site.ts`; import `SITE` instead of hardcoding phone/email/links — one place to update.
+- Contact form validation rules live in `src/lib/contact-schema.ts` (shared by browser and server fn); submissions are inserted by `submitContactRequest` with the publishable key into `contact_submissions`, where RLS allows insert only — visitors never read data.
+- Shared header, footer and mobile contact bar render in `src/routes/__root.tsx`; pages only render their own content.
+- Legal pages (`/impressum`, `/datenschutz`) use `Ph` placeholders from `LegalLayout`; keep them visible until the owner supplies real text.
+<!-- AGENT-MEMORY:END -->
