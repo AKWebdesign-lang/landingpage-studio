@@ -16,7 +16,7 @@ export function SiteFooter() {
           <h2 className="mb-3 font-display text-base font-bold text-gold">Kontakt</h2>
           <p>{SITE.name}</p>
           <p>
-            {SITE.city}, {SITE.state}
+            {SITE.legalCityLine}
           </p>
           <p>
             <a href={SITE.phoneHref} className="hover:text-gold">
