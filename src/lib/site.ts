@@ -14,6 +14,8 @@ export const SITE = {
   tiktokHref: "https://www.tiktok.com/",
   city: "39218 Schönebeck (Elbe)",
   state: "Sachsen-Anhalt",
+  // Anschrift-Zeile für Impressum & Datenschutz (Wunschformat des Kunden)
+  legalCityLine: "39218 Sachsen-Anhalt – Schönebeck (Elbe)",
 } as const;
 
 export const SERVICE_OPTIONS = [

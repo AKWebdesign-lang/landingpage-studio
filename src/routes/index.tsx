@@ -344,7 +344,7 @@ function Area() {
           <div
             role="img"
             aria-label="Stilisierte Karte: Einsatzgebiet rund um Magdeburg und Schönebeck an der Elbe"
-            className="map-dots relative aspect-[4/3] overflow-hidden rounded-3xl bg-sky-gradient shadow-card ring-1 ring-border"
+            className="map-dots relative aspect-[4/3] overflow-hidden rounded-3xl shadow-card ring-1 ring-border"
           >
             <svg viewBox="0 0 400 300" className="absolute inset-0 h-full w-full" aria-hidden="true">
               <circle cx="205" cy="160" r="120" className="fill-brand/10 stroke-brand/40" strokeDasharray="6 6" />

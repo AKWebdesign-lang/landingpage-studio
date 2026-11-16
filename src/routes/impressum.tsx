@@ -3,7 +3,7 @@
  */
 import { createFileRoute } from "@tanstack/react-router";
 
-import { LegalLayout, Ph } from "@/components/site/LegalLayout";
+import { EmailText, LegalLayout, Ph } from "@/components/site/LegalLayout";
 import { SITE } from "@/lib/site";
 
 const TITLE = "Impressum – Kurti Service Schönebeck (Elbe)";
@@ -36,7 +36,7 @@ function Impressum() {
           <br />
           <Ph>Straße und Hausnummer</Ph>
           <br />
-          {SITE.city}, {SITE.state}
+          {SITE.legalCityLine}
         </p>
       </section>
       <section>
@@ -44,7 +44,7 @@ function Impressum() {
         <p>
           Telefon: <a className="text-brand underline" href={SITE.phoneHref}>{SITE.phoneDisplay}</a>
           <br />
-          E-Mail: <a className="break-all text-brand underline" href={SITE.emailHref}>{SITE.email}</a>
+          E-Mail: <a className="text-brand underline" href={SITE.emailHref}><EmailText email={SITE.email} /></a>
         </p>
       </section>
       <section>
@@ -59,7 +59,7 @@ function Impressum() {
       <section>
         <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
         <p>
-          <Ph>Vor- und Nachname</Ph>, <Ph>Straße und Hausnummer</Ph>, {SITE.city}
+          <Ph>Vor- und Nachname</Ph>, <Ph>Straße und Hausnummer</Ph>, {SITE.legalCityLine}
         </p>
       </section>
       <section>

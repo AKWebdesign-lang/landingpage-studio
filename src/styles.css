@@ -219,8 +219,11 @@
 
 /* Faint dotted pattern for stylised map */
 @utility map-dots {
-  background-image: radial-gradient(oklch(0.505 0.165 258 / 0.18) 1.2px, transparent 1.2px);
-  background-size: 14px 14px;
+  background-image:
+    radial-gradient(oklch(0.505 0.165 258 / 0.18) 1.2px, transparent 1.2px), var(--gradient-sky);
+  background-size:
+    14px 14px,
+    100% 100%;
 }
 
 @keyframes shine {

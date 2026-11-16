@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { SITE } from "@/lib/site";
+import { EmailText } from "./LegalLayout";
 import { Logo } from "./Logo";
 
 export function SiteFooter() {
@@ -23,8 +24,8 @@ export function SiteFooter() {
             </a>
           </p>
           <p>
-            <a href={SITE.emailHref} className="break-all hover:text-gold">
-              {SITE.email}
+            <a href={SITE.emailHref} className="hover:text-gold">
+              <EmailText email={SITE.email} />
             </a>
           </p>
         </div>
